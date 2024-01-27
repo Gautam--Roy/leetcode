@@ -9,6 +9,6 @@ class Solution:
             if m == "R":
                 cd += 1
             if m == "G":
-                init[0] += dir[cd][0]
-                init[1] += dir[cd][1]
+                init[0] += dir[cd%4][0]
+                init[1] += dir[cd%4][1]
         return init == [0,0] or cd%4 != 0
