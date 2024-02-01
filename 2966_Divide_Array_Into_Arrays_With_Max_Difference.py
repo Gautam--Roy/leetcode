@@ -3,7 +3,6 @@ class Solution:
         sortedArr = sorted(nums)
         ans = []
         for oc in range(0, len(sortedArr), 3):
-            print(f" nimus : {sortedArr[oc + 2] - sortedArr[oc]}")
             if sortedArr[oc + 2] - sortedArr[oc] <= k:
                 ans.append(sortedArr[oc : oc + 3])
         if len(ans) != len(sortedArr) / 3 : return []
